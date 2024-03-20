@@ -1,0 +1,13 @@
+{% if template != 'cart' %}
+    <script>
+      var newDiv = document.createElement('div')
+      newDiv.setAttribute('id', 'app')
+      newDiv.setAttribute('data-product', '{{ product.id }}')
+      newDiv.setAttribute('handle', '{{ product.handle }}')
+      newDiv.setAttribute('data-domain', '{{ shop.permanent_domain }}')
+      var cart_pod = document.querySelector("form[action='/cart/add']")
+      cart_pod.insertBefore(newDiv, cart_pod.lastElementChild)
+    </script>
+    <script src='https://s3-ap-southeast-1.amazonaws.com/productpersonalizer.godmerch.com/require.js' defer></script>
+  {% endif %}
+  
