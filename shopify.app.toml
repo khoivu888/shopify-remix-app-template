@@ -3,7 +3,7 @@
 client_id = "03af34bbe967e7558fcebfe6bc374374"
 name = "remix-app-template"
 handle = "remix-app-template-6"
-application_url = "https://authorities-performances-digest-bufing.trycloudflare.com"
+application_url = "https://agents-johns-ix-lined.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://authorities-performances-digest-bufing.trycloudflare.com/auth/callback",
-  "https://authorities-performances-digest-bufing.trycloudflare.com/auth/shopify/callback",
-  "https://authorities-performances-digest-bufing.trycloudflare.com/api/auth/callback"
+  "https://agents-johns-ix-lined.trycloudflare.com/auth/callback",
+  "https://agents-johns-ix-lined.trycloudflare.com/auth/shopify/callback",
+  "https://agents-johns-ix-lined.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

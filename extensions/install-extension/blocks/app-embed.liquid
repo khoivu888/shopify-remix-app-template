@@ -1,16 +1,12 @@
-{% if template contains 'product' -%}
-    {%- unless product.vendor contains 'CustomEasy'
-      or product.vendor contains 'PODLovers'
-      or product.tags contains 'customily'
-      or product.tags contains 'no-personalizer'
-    -%}
-      {%- render 'pod-personalizer' -%}
-    {%- endunless -%}
-  {%- endif %}
+  {%- render 'pod-personalizer' -%}
   {% schema %}
   {
-    "name": "Party",
+    "name": "POD Personalizer",
     "target": "body",
-    "settings": []
+    "enabled_on": {
+      "templates": ["product"]
+    },
+    "settings": [
+    ]
   }
   {% endschema %}
